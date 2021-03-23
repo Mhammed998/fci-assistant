@@ -1,0 +1,696 @@
+/* start styling body for every page */
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body.admin-log{
+    margin:0;
+    padding:0;
+    height:100%;
+    background-color: darkslateblue;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+/* media query to edit body padding in samll screens  */
+
+media(max-width:600px){
+  body.dashboard{
+    padding: 0px !important;
+  }
+
+
+
+}
+
+
+
+/*start styling login form */
+
+.myform{
+
+    max-width:370px;
+    margin:50px auto;
+    border:1px solid #ccc;
+    padding: 25px 15px 40px;
+    border-radius: 10px;
+    background-color:#fff;
+    margin-bottom:20px;
+}
+
+
+
+
+
+
+.myform .log-h
+{
+    text-align: center;
+    color:#555;
+    letter-spacing: 3px;
+    font-size:33px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+  #login .form-control{
+    margin-bottom: 20px;
+    border-radius: 30px!important;
+    background: transparent;
+    color:#444;
+    height: 40px;
+    box-shadow:none;
+
+}
+
+
+
+ .not{
+    color:#333;
+    cursor: pointer;
+    margin-left:15px;
+}
+
+.not:hover{
+  color:#555;
+}
+
+ .myform .btn{
+    margin-top:20px;
+    background-color:#fff;
+    color:#444;
+    font-size: 19px;
+    border:2px solid #555 ;
+    border-radius: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.myform .btn:hover{
+    background-color:cornflowerblue;
+    color:#fff;
+    font-weight: 600;
+    border:2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.myform  .custom-error{
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 5px;
+    width: 310px;
+    border-left: 2px solid red;
+    margin-top:20px;
+}
+
+.myform  .custom-suc{
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 5px;
+    width: 325px;
+    margin-left: 8px;
+    color:#046b23;
+    font-weight: 300;
+    border: 1px solid #046b23;
+    margin-top: 20px;
+}
+
+
+
+/*start styling dashboard */
+
+body.dashboard{
+ height:100%;
+ padding: 20px 25px 25px 240px;
+ background-color:#f9f9f9;
+ font-family: 'Poppins', sans-serif;
+
+
+}
+
+.big-title{
+    font-size: 50px;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: inherit;
+}
+
+.side-nav{
+    width:220px;
+    height: 100%;
+    background:#fff;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom:0;
+    padding-top:0px;
+    color: #555;
+    border-right:1px solid #ddd;
+    box-shadow: 3px 12px 12px #ddd;
+}
+
+@media(max-width:600px){
+
+  body{
+    padding: 20px 20px 20px 125px !important;
+  }
+
+  body.admin-log{
+      margin:0;
+      padding:0 !important;
+      height:100%;
+      background-color: darkslateblue;
+      font-family: 'Poppins', sans-serif;
+
+  }
+
+ .side-nav{
+   width:100px;
+   background:#444;
+
+
+ }
+
+ .side-nav #names{
+   display:none;
+ }
+
+ .side-nav .list-unstyled{
+   text-align: center;
+ }
+
+
+ .side-nav .list-unstyled li{
+   border-bottom:1px solid #666;
+
+ }
+
+ .side-nav .list-unstyled li a{
+   font-size: 25px !important;
+   text-align: center;
+   color:#fff !important;
+ }
+
+
+
+
+}
+
+.side-nav #toggle{
+  right: 10px;
+  position: absolute;
+  top: 12px;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+
+.side-nav .top{
+    background-color:#2c3ade;
+    padding: 5px 5px 5px 5px;
+    text-align: center
+}
+
+
+
+.side-nav img{
+
+    border:2px solid #fff;
+    width: 70px;
+    height: 70px;
+    margin:10px auto;
+}
+
+.side-nav h4{
+    color:#fff;
+    font-size:20px;
+    margin-left: 4px;
+
+}
+
+.side-nav .middle{
+
+    margin-top: 25px;
+}
+
+.side-nav .list-unstyled{
+    text-align: left;
+
+}
+
+.side-nav .list-unstyled li{
+    padding:10px 30px;
+    margin-bottom:5px;
+
+}
+.side-nav .list-unstyled li a{
+    display:block;
+    color:#555;
+    font-size:17px;
+    text-decoration: none;
+    transition: all 0.3s ease-in;
+
+}
+
+.side-nav .list-unstyled li a:hover{
+    padding-left: 12px;
+    transition: all 0.3s ease-in;
+}
+
+/* styling dashboard page */
+
+#dashboard .dash-box{
+    border:1px solid #fff;
+    height: 130px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#fff;
+    padding: 10px 20px 20px;
+    border-radius:5px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+#dashboard  #users{
+    background-color:#3498db ;
+}
+
+#dashboard  #pending-users{
+    background-color:#e74c3c ;
+}
+
+#dashboard  #views{
+
+     background-color:#8e44ad;
+}
+
+#dashboard  #comments{
+    background-color:#e67e22 ;
+}
+
+#dashboard  #events{
+    background-color:#2ecc71 ;
+}
+
+
+
+
+#dashboard .dash-box .info{
+    float:left;
+    margin-top: 0px;
+
+}
+
+#dashboard .dash-box .info h5 a{
+  font-size:22px;
+  font-weight: bold;
+  margin-bottom:0;
+  color:#fff;
+  text-decoration: none;
+
+}
+
+#dashboard .dash-box .info p{
+    font-size: 50px;
+    margin-top: -10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#dashboard .dash-box .icon{
+    float:right;
+    font-size: 50px;
+    margin-top:33px;
+}
+
+
+/* styling members page */
+
+#members .table tr:first-child ,
+#comments .table tr:first-child
+{
+color: #fff;
+font-weight: bold;
+background-color: #555;
+text-align:center;
+font-size:18px;
+
+}
+
+
+#members .table td ,
+#comments .table td
+{
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+#members .table td span,
+#comments .table td span
+{
+color: #444;
+margin-left: 10px;
+}
+
+#members .table td:nth-child(2){
+    text-align: left;
+}
+
+#members .btn{
+    padding:7px 5px;
+    color:#fff;
+    width: 40px;
+    margin-right: 7px;
+    margin-top: 7px;
+}
+
+#members .approve-all{
+    padding:7px 5px;
+    color:#fff;
+    margin-right: 7px;
+    margin-top: 7px;
+    width:120px;
+}
+
+
+
+.panel-body{
+    padding:2px 15px;
+}
+
+.panel-body ul li{
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+}
+
+.panel-body ul li:nth-child(even){
+    background-color: #eee;
+}
+
+.panel-body ul li:last-child{
+    border-bottom:none;
+}
+
+#members-form  .form-control{
+    margin-bottom: 20px;
+    border-radius: 5px !important;
+    border:1px solid #77777761 !important;
+    background: transparent;
+    color:#666;
+    height: 50px;
+    box-shadow:none;
+    font-size:19px;
+
+}
+
+#members-form  label{
+    font-size:20px;
+  }
+
+ #members-form .btn{
+     width:70px;
+     padding:10px 20px;
+ }
+
+select {
+    width: 150px;
+    padding: 5px;
+    font-size: 17px;
+ }
+
+
+  .right-info hr{
+     margin-top:15px;
+     margin-bottom:15px;
+ }
+
+
+/* start styling profile page */
+
+#profile .labl{
+    width: 115px;
+    display: inline-block;
+    font-weight: 600;
+    color:#333;
+}
+
+#profile span{
+    font-weight: 600;
+    color: #555;
+    font-size: 17px;
+}
+
+#profile hr{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#profile form label{
+  font-size:20px;
+}
+
+
+
+/* start styling tracks pages */
+
+
+
+.track{
+    padding:10px;
+    min-height: 120px;
+    position:relative;
+    word-wrap: break-word;
+}
+
+.track .control{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.track .title{
+    font-size: 20px;
+    color: rgb(5, 92, 150);
+    font-weight: 600;
+}
+
+
+
+.track p{
+    color:#777;
+    width:60%;
+    word-wrap: break-word;
+}
+
+@media(max-width:767px){
+  .track p{
+    color:#777;
+    width:100%;
+}
+}
+
+.track h6{
+    font-size: 15px;
+    color: #111;
+    font-weight: 600;
+    padding: 4px;
+    margin-bottom:0;
+
+}
+
+ hr{
+    margin-top:7px;
+    margin-bottom:7px;
+}
+
+form.add-track{
+    margin: 40px auto;
+    max-width: 450px;
+}
+
+form.add-track .form-control{
+    border:1px solid #ccc;
+}
+
+.list{
+  padding:10px;
+  background-color: #f5f5f5;
+  color:#555;
+  position: relative;
+}
+
+.list .controls{
+  position:absolute;
+  right: 10px;
+  top: 20px;
+}
+
+.list .controls .btn{
+  margin-right: 10px;
+  width: 60px;
+  padding: 5px;
+}
+
+
+/*start styling events */
+
+
+
+.event{
+    margin: 30px 0px 20px;
+    word-wrap: break-word;
+    height: 350px;
+
+}
+
+.event>img{
+    display: block;
+    width: 329px;
+    height: 200px;
+}
+
+a.addevent{
+    margin:25px 0px 50px;
+}
+
+.event span{
+    float: right;
+    color: #aaa;
+    font-family: cursive;
+    font-size: 14px;
+}
+
+#addEvent{
+    max-width:350px;
+    margin:30px auto;
+}
+
+
+
+/* start members profile */
+
+.admin-profile .img-head{
+
+  background-image: url("../images/admin-cover.jpg");
+  height: 460px;
+  background-size: cover;
+  background-attachment: fixed;
+  position:relative;
+
+}
+
+.admin-profile .img-head .left-info{
+  position: absolute;
+  bottom: -90px;
+  left: 50%;
+  transform: translateX(-130px);
+}
+
+.admin-profile .img-head .left-info img{
+  width: 200px;
+  height: 215px;
+
+}
+
+.admin-profile .memberName .admin{
+  color: #fff;
+  background-color: #286090;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+
+
+.img-head{
+  background-image: url("../images/profile-cover.jpg");
+  height: 460px;
+  background-size: cover;
+  background-attachment: fixed;
+  position:relative;
+}
+
+.img-head .left-info{
+  position: absolute;
+  bottom: -140px;
+  left: 60px;
+}
+
+.img-head .left-info img{
+  width: 200px;
+  height: 215px;
+
+}
+
+
+
+#main-member-info{
+  margin-top: 160px;
+  margin-bottom: 40px;
+}
+
+ h3.memberName{
+  margin:10px 0;
+  text-transform: capitalize;
+}
+
+
+#main-member-info .labl {
+    width: 115px;
+    display: inline-block;
+    font-weight: 600;
+    color: #333;
+}
+
+#main-member-info span {
+    font-weight: 600;
+    color: #555;
+    font-size: 17px;
+}
+
+#main-member-info hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#main-member-info .panel-body {
+  padding:5px 10px;
+}
+
+
+
+#comments .panel-body{
+ padding:10px 10px;
+}
+
+
+/* end members profile */
+
+
+
+
+
+/*start styling footer */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    width:100%;
+}
